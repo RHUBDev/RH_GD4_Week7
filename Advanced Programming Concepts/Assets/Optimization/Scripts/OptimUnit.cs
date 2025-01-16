@@ -96,6 +96,11 @@ public class OptimUnit : MonoBehaviour
 
     void Move()
     {
+        transform.position = transform.position + currentVelocity * Time.deltaTime;
+    }
+    
+    /*void Move()
+    {
         Vector3 position = transform.position;
         
         float distanceToCenter = Vector3.Distance(Vector3.zero, position);
@@ -109,7 +114,7 @@ public class OptimUnit : MonoBehaviour
         }
         
         transform.position = position;
-    }
+    }*/
 
     private void HandleTime()
     {
